@@ -1,0 +1,293 @@
+.grid-container-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    max-width: 100%; /* Ogranicza szerokość kontenera do 100% szerokości widoku */
+    margin-left: 7.5%;
+    margin-right: 7.5%;/* Wyśrodkowuje kontener */
+    grid-auto-flow: column;
+    grid-auto-flow: dense;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.single-article {
+    grid-column: 1 / -1; /* Szerokość artykułu na całą szerokość siatki */
+
+}
+
+.second-article {
+    grid-column: 1/2; /* Każdy artykuł zajmuje jedną kolumnę */
+    grid-row: 2; /* Ustawienie artykułów w drugim wierszu */
+}
+
+.third-article {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.fourth-article {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+
+header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 85%;
+    text-align: center;
+}
+
+
+.nav li {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    margin-bottom: 4rem;
+}
+
+nav ul li {
+    margin-right: 30px; /* Dovdaje 20px odstępu między elementami */
+}
+
+
+nav ul li a {
+    text-decoration: none; /* Usuwa podkreślenie z linków */
+    color: black; /* Ustawia kolor tekstu linków */
+    padding: 10px 15px;
+ }
+
+ .single-article {
+    width: 85%;
+    margin: auto; /* Wyśrodkowanie kontenera artykułu */
+    border: 1px solid #ddd; /* Ramka wokół kontenera */
+    padding: 0px; /* Odstępy wewnątrz kontenera */
+    box-sizing: 0; /* Uwzględnienie obramowania i paddingu w szerokości kontenera */
+}
+
+.single-article img {
+    width: 100%; /* Szerokość obrazu ustawiona na 60% szerokości kontenera */
+    margin: 0; /* Automatyczne marginesy po lewej i prawej stronie */
+    display: block; /* Zmienia obraz w element blokowy, aby wyśrodkowanie działało */
+
+}
+.second-article img {
+    width: 100%; /* Szerokość obrazu ustawiona na 60% szerokości kontenera */
+    max-height: 1500px;
+    margin: 0; /* Automatyczne marginesy po lewej i prawej stronie */
+    padding: 0;
+    display: block; /* Zmienia obraz w element blokowy, aby wyśrodkowanie działało */
+}
+
+.third-article img {
+    width: 100%; /* Szerokość obrazu ustawiona na 60% szerokości kontenera */
+    max-height: 1500px;
+    margin: 0; 
+    padding: 0;
+    display: block; /* Automatyczne marginesy po lewej i prawej stronie */
+     /* Zmienia obraz w element blokowy, aby wyśrodkowanie działało */
+}
+
+.fourth-article img {
+    width: 100%; /* Szerokość obrazu ustawiona na 60% szerokości kontenera */
+    max-height: 1500px;
+    margin: 0 auto; /* Automatyczne marginesy po lewej i prawej stronie */
+    display: block; /* Zmienia obraz w element blokowy, aby wyśrodkowanie działało */
+    padding: 0;
+}
+    body {
+        padding: 20px; /* Dodaje 20px paddingu wewnętrznego z każdej strony */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0; /* Pozycjonowanie nakładki po prawej stronie */
+        width: 50%; /* Szerokość nakładki */
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0); /* Półprzezroczyste tło */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        text-decoration: none; /* Usunięcie podkreślenia */
+        color: white; /* Kolor tekstu na biało */
+        font-size: 7em; /* Duża czcionka */
+        font-family: 'Arial', sans-serif; /* Zmiana czcionki na Arial lub domyślną bezszeryfową */
+        transition: background-color 0.3s ease; /* Płynne przejście tła */
+    }
+    
+    .overlay span {
+        padding: 9px;
+    }
+
+    .overlay a {
+        color: white; /* Kolor linku */
+        font-family: 'Arial', sans-serif; /* Domyślna czcionka linku */
+        text-decoration: none; /* Usunięcie podkreślenia */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dodanie cieniowania tekstu */
+        -webkit-text-stroke: 1px black; /* Dodanie obramowania do tekstu */
+    }
+    
+
+    .overlay a:visited {
+        color: #cccccc; /* Kolor linku po odwiedzeniu */
+        font-family: 'Times New Roman', serif; /* Czcionka po odwiedzeniu linku */
+        font-style: italic; /* Styl czcionki po odwiedzeniu (np. kursywa) */
+    }
+    
+    .overlay-link:hover {
+        color: #000000ce; /* Zgniła zieleń */
+        text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Dodanie cieniowania tekstu */
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+    }
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+    font-family: 'arial'; /* Ustawienie rodziny czcionki, np. Lato */
+    font-weight: lighter; /* Ustawienie cienkiej czcionki */
+    font-style: normal; /* Można użyć 'italic' dla kursywy */
+    color: rgba(37, 37, 37, 0.913);
+}
+
+
+
+/* Ustawienia dla wszystkich linków */
+.link, .link_1 {
+    text-decoration: none; /* Usuwa podkreślenie */
+}
+
+.link :hover, .link_1 :hover {
+    color: rgb(61, 131, 148); /* Granatowy kolor na hover */
+}
+
+.link_2 {
+    position: relative; /* Dodaj, jeśli nie jest ustawione */
+    z-index: 10; /* Ustaw wartość wyższą, jeśli inne elementy mogą nakładać się */
+}
+
+.link_2 {
+    text-decoration: none;
+}
+
+.link_2 :hover {
+    color: rgb(61,131,148);
+}
+
+
+.article p {
+    font-size: 60px; /* Adjust font size as needed */
+    margin: 5; /* Remove default margins */
+    padding: 10px; /* Add padding if needed for spacing */
+    font-style: italic;
+}
+
+b {
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.article p {
+    background-color: #dad8d894; /* Ustawia kolor tła */
+    padding: 60px; /* Dodaje odstęp wewnętrzny */
+    margin: 0;
+    border-radius: 5px; /* Zaokrągla narożniki (opcjonalnie) */
+    box-sizing: border-box;
+}
+
+.grid-container-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0%;
+    max-width: 100%; /* Ogranicza szerokość kontenera do 100% szerokości widoku */
+    margin-left: 33%; /* Wyśrodkowuje kontener */
+    margin-right: 0;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dwie kolumny o równej szerokości */
+    width: 80%;
+    gap: 30px; /* Odstęp między kolumnami */
+    padding: 0px; /* Odstęp wewnętrzny w stopce */
+    align-items: center; /* Wyśrodkowanie pionowe elementów w stopce */
+    margin-left: 10%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    align-items: center; /* Wyśrodkowanie poziome zawartości */
+    justify-content: center; /* Wyśrodkowanie pionowe zawartości */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.footer .image_11 {
+    width: 500px; /* Ustaw szerokość obrazka */
+    height: auto; /* Ustaw automatyczną wysokość, aby zachować proporcje */
+    margin: 0 auto; /* Wyśrodkowanie obrazka w kolumnie */
+}
+
+.footer p {
+    font-size: 50px;
+}
+
+
+.article-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.article-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.article {
+    text-align: center; /* Centers the button horizontally within the article */
+}
+
+.article-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increases padding for a larger button size */
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 60px; /* Increases the font size for better visibility */
+    transition: background-color 0.3s ease;
+    width: 80%; /* Makes the button width larger, but keeps it responsive */
+    max-width: 300px; /* Sets a maximum width for the button */
+}
+
+.article-button:hover {
+    background-color: #333;
+    color: #fff;
+}
